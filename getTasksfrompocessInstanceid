@@ -1,0 +1,43 @@
+get tasks from process instanceid
+method post:
+url:http://localhost:8081/graphql
+headers:
+Content-Type:application/json
+Cookie:TASKLIST-SESSION=DD06C3FFEE3C7048332B86A3B2003F5C
+query:
+query tasks ($query: TaskQuery!) {
+    tasks (query: $query) {
+        id
+        name
+        taskDefinitionId
+        processName
+        creationTime
+        completionTime
+        assignee
+        variables {
+            id
+            name
+            value
+            previewValue
+            isValueTruncated
+        }
+        taskState
+        sortValues
+        isFirst
+        formKey
+        processDefinitionId
+        processInstanceId
+        candidateGroups
+    }
+}
+
+Graphql variables:
+{
+  "query": {
+    "processInstanceId":"2251799813685259"
+    
+  }
+}
+
+
+
