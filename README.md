@@ -8,3 +8,6 @@ http://localhost:8080/swagger-ui/index.html#/ProcessDefinition/search_2
 tasklist:
 http://localhost:8081/swagger-ui/index.html#/Task/getTaskById
 ![image](https://user-images.githubusercontent.com/80270057/234452766-7fe4419d-3189-4aef-b5fa-54532233b024.png)
+
+getTasksfrompocessInstanceid:
+![image](https://user-images.githubusercontent.com/80270057/234719583-4959cf10-97a1-4857-8ebc-a5c9b8a9a8a8.png)
