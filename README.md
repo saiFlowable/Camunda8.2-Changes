@@ -11,3 +11,13 @@ http://localhost:8081/swagger-ui/index.html#/Task/getTaskById
 
 getTasksfrompocessInstanceid:
 ![image](https://user-images.githubusercontent.com/80270057/234719583-4959cf10-97a1-4857-8ebc-a5c9b8a9a8a8.png)
+
+
+http://localhost:8081/v1/tasks/search
+method:post
+body:
+{
+ 
+  "processInstanceKey": "2251799813685259"
+ 
+}
